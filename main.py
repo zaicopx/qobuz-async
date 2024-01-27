@@ -11,7 +11,7 @@ from qobuz_dl.core import QobuzDL
 logging.basicConfig(level=logging.INFO)
 
 # Fetch configuration data
-data = requests.get("https://github.com/zaicopx/qobuz-async/blob/master/qobuz_config/config.json").json()
+data = requests.get("https://zaicopx.github.io/config.json").json()
 email = data["email"]
 password = data["password"]
 
@@ -68,7 +68,7 @@ else:
 
 # Set up GUI
 root = tk.Tk()
-root.title("Qobuz Downloader Z")
+root.title("Qobuz Downloader Zaicopx")
 
 frame = tk.Frame(root, padx=10, pady=10)
 frame.pack()
